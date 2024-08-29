@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/gallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar  navbar-expand-md fixed-top" style="background-color: #f1eaea;">
+    <div class="container-fluid d-flex ">
+      <a class="navbar-brand nav-title" href="#">
+        <span >LUX</span> <i class="fa-solid fa-heart" style="color: palevioletred;"></i> <span>LOVE</span>
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #f1eaea;">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            LUX LOVE
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body  mt-1 pt-2 text-start justify-content-md-end">
+          <ul class="d-flex flex-column flex-md-row gap-3 justify-content-center " style="list-style-type: none;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <strong class="animate-menu-navigates fs-4">
+                  Home
+                </strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <strong class="animate-menu-navigates fs-4">
+                  About
+                </strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <strong class="animate-menu-navigates fs-4">
+                  Gallery
+                </strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <strong class="animate-menu-navigates fs-4">
+                  Contact
+                </strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+     
+  </nav>
+
+
+      <div class="container-fluid w-100 mt-5 py-5 ">
+        <h2 class="text-center display-4 mt-3 px-0 px-md-5" style="font-family: sans-serif; color: palevioletred;">
+          Modern Indian Wedding Photography for the Discerning Couple
+        </h2>
+        <h6 class="fs-4 px-0 px-md-4 text-center mb-5">
+          Capturing the magic and emotions of your special day, our wedding photography transforms fleeting moments into timeless memories. Trust us to tell your love story with creativity, passion, and artistry.
+        </h6>
+        <div class=" col-12 text-center button-container">
+          <button class="btn " onclick="showAll()">All</button>
+          <button class="btn " onclick="showGallery('south-indian')">South Indian</button>
+          <button class="btn" onclick="showGallery('north-indian')">North Indian</button>
+          <button class="btn" onclick="showGallery('western')">Western</button>
+      </div>
+        <div class="gallery-container">
+            <div class="gallery-item south-indian">
+                <img src="./public/images/gallery/1.jpg" alt="gallery" class="gallery-item south-indian ">
+            </div>
+            <div class="gallery-item north-indian">
+                <img src="./public/images/gallery/2.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+                <img src="./public/images/gallery/3.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+                <img src="./public/images/gallery/4.jpg" alt="gallery" class="gallery-item south-indian">
+            </div> 
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/5.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/6.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/7.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/8.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/9.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/10.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/11.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/12.jpg" alt="gallery western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/13.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/14.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/15.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/16.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/17.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/18.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/19.jpg" alt="gallery" class="gallery-item  south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/20.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/21.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/22.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+            <div class="gallery-item north-indian">
+              <img src="./public/images/gallery/23.jpg" alt="gallery" class="gallery-item north-indian">
+            </div>
+            <div class="gallery-item western">
+              <img src="./public/images/gallery/24.jpg" alt="gallery" class="gallery-item western">
+            </div>
+            <div class="gallery-item south-indian">
+              <img src="./public/images/gallery/25.jpg" alt="gallery" class="gallery-item south-indian">
+            </div>
+        </div>
+
+
+        <div id="carousel" class="carousel">
+            <span class="close"><i class="fa-solid fa-square-xmark"></i></span>
+            <div class="carousel-content">
+                <div class="carousel-item">
+                    <img src="./public/images/gallery/1.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/images/gallery/2.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/images/gallery/3.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/images/gallery/4.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/5.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/6.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/7.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/8.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/9.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/10.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/11.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/12.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/13.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/14.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/15.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/16.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/17.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/18.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/19.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/20.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/21.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/22.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/23.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/24.jpg" alt="gallery">
+                </div>
+                <div class="carousel-item">
+                  <img src="./public/images/gallery/25.jpg" alt="gallery">
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+            <a class="next" onclick="changeSlide(1)"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        
+
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-9 text-center py-4" style="background-color: palevioletred;">
+              <h3 class="fs-1 fw-bold">
+                How about becoming our next muse?
+              </h3>
+              <p class="fs-5">
+                Are you getting married? Are you looking for the perfect wedding photographer for your dream wedding? We’re obsessed about wedding stories, and would love to explore working with you! Get in touch with us right away using the link below! 
+              </p>
+              <button class="gallery-contact-btn">
+                <a href="contact.html">
+                  CONTACT US
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+             <!-- footer-->
+      <div class="footer-container py-3">
+        <div class="footer-content-1">
+          <div class="footer-logo">
+            <h3>
+              <span>LUX</span> <i class="fa-solid fa-heart" style="color: black;"></i> <span>LOVE</span>
+            </h3>
+            <p class="px-0 px-md-4">
+              At Lux Love Wedding Photography, we believe that every love story is unique and deserves to be told with elegance, style, and a touch of luxury.
+            </p>
+          </div>
+          <div class="links ">
+            <h4>
+              Quick Links
+            </h4>
+            <p class="mb-2">
+              <a class="text-decoration-none" href="index.html">
+                Home
+              </a>
+            </p>
+            <p class="mb-2">
+              <a class="text-decoration-none" href="about.html">
+                About
+              </a>
+            </p>
+            <p class="mb-2">
+              <a class="text-decoration-none" href="gallery.html">
+                Gallery
+              </a>
+            </p>
+            <p class="mb-2">
+              <a class="text-decoration-none" href="contact.html">
+                Contact
+              </a>
+            </p>
+          </div>
+          <div class="contact">
+            <h4>
+              Contact
+            </h4>
+            <div class="contact-card">
+              <label>
+                <i class="fa-solid fa-phone "></i>
+              </label>
+              <p>
+                <a href="">
+                  9867543210
+                </a>
+              </p>
+            </div>
+            <div class="contact-card">
+              <label>
+                <i class="fa-solid fa-envelope"></i>
+              </label>
+              <p>
+                <a href="">
+                  abc@gmail.com
+                </a>
+              </p>
+            </div>
+            <div class="contact-card">
+              <label>
+                <i class="fa-solid fa-house"></i>
+              </label>
+              <p>
+                chennai,valsravakkam 
+              </p>
+            </div>
+       
+          </div>
+        </div>
+        <div class="footer-content-2">
+          
+          <div class="copyrights">
+            <p class="mb-0">
+              @ 2024 , All Rights Reserved.
+            </p>
+          </div>
+          <div class="social-icons">
+            <p class="mb-0">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x" style="color: #000;"></i>
+              </a>
+            </p>
+            <p class="mb-0">
+              <a href="https://github.com" target="_blank">
+                <i class="fa-brands fa-github fa-2x" style="color: #000;"></i>
+              </a>
+            </p>
+            <p class="mb-0">
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x" style="color: #000;"></i>
+              </a>
+            </p>
+            <p class="mb-0">
+              <a href="https://x.com" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x" style="color: #000;"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-to-top" id="scrollToTopBtn" onclick="scrollToTop()" class="btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./public/js/gallery.js"></script>
+</body>
+</html>
